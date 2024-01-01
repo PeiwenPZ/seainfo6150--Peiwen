@@ -1,0 +1,208 @@
+/* backgroud*/
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7e5d4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0px;
+    font-size: 16px;
+    color: #4d3b27;
+}
+
+
+/*nav Bar*/
+header {
+    padding: auto;
+    /*to make sure nav bar display in one row*/
+    width: 100%;
+
+}
+
+
+.horizontal-menu {
+    background-color: #3338;
+    color: white;
+    position: fixed;
+    display: flex;
+    padding: 1rem;
+    width: 100%;
+    align-items: center;
+
+}
+
+.horizontal-menu img {
+    width: 50px;
+    height: 50px;
+}
+
+.horizontal-menu ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 1rem;
+    display: flex;
+
+}
+
+.horizontal-menu li {
+    margin-right: 25px;
+    position: relative;
+}
+
+.horizontal-menu a {
+    color: #fff;
+    text-decoration: none;
+
+    margin-left: 25px;
+}
+
+.horizontal-menu .dropdown-menu {
+    display: none;
+    position: relative;
+    padding: 10px;
+    background-color: #3339;
+    /* make sure you can click it */
+    left: 0;
+    margin: 0;
+}
+
+.horizontal-menu li:hover .dropdown-menu {
+    display: block;
+    /* make sure you can click it */
+    position: absolute;
+    /*  make it non wrap */
+    white-space: nowrap;
+}
+
+.dropdown-menu li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+
+/*main*/
+main {
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    align-items: center;
+}
+
+
+/* home page*/
+.ui-card {
+    background-color: white;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.ui-card img {
+    width: 400px;
+    height: 300px;
+    border-radius: 5px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+/* 2 column ui-card in web */
+@media screen and (min-width: 768px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
+/* register page*/
+
+.register {
+    width: 100%;
+    /* Expand form fields to fill the available space */
+    padding: 10px;
+    margin-bottom: 1rem;
+    display: grid;
+    grid-template-columns: 1fr;
+
+}
+
+@media screen and (min-width: 768px) {
+    .register {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .button-container {
+        grid-column: span 2;
+        /*make button on the middle*/
+        justify-self: center;
+    }
+}
+
+.question button {
+    width: 100%;
+}
+
+.question,
+.button-container {
+    margin: 1rem;
+}
+
+/* Style form fields for accessibility */
+label {
+    display: block;
+    font-weight: bold;
+}
+
+
+input[type="text"],
+input[type="email"],
+select {
+    width: 100%;
+    /* Expand form fields to fill the available space */
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 1rem;
+    border: 1px solid var(--shiba-text-color);
+    border-radius: 5px;
+}
+
+
+/*footer*/
+footer {
+    background-color: #3338;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1em;
+    margin-top: 1em;
+}
+
+
+
+.button,
+button {
+    background-color: #c85a54;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    /* Slightly darken the button on hover */
+    background-color: #b14c46;
+
+}

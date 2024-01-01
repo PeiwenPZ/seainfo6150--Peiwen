@@ -1,0 +1,8 @@
+
+.panelPage{
+    display: block;
+}
+
+.panel{
+    display: flex;
+}

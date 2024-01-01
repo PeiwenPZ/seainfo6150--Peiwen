@@ -1,0 +1,27 @@
+
+.global-nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+
+    padding: 0;
+    
+}
+
+.global-nav-list--hidden{
+    display: none;
+}
+
+
+
+
+@media(width >44rem){
+    .global-nav-list--hidden{
+        display: flex;
+    }
+
+    .global-nav-toggle{
+        display: none;
+    }
+}

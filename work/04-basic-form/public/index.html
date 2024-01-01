@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="container">
+    <header>
+        <h1>Registration Form</h1>
+    </header>
+
+    <main>
+        <form action="/submit" method="POST">
+            <div class="question">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="question">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+
+            <div class="question">
+                <label for="annoy_me">Do you want us to send you annoying emails?</label>
+                <input type="checkbox" id="annoy_me" name="annoy_me" checked>
+            </div>
+
+            <div class="question">
+                <label for="tier">Select a Tier:</label>
+                <select id="tier" name="tier">
+                    <option value="" selected>Please select</option>
+                    <option value="1">Silver Tier</option>
+                    <option value="2">Gold Tier</option>
+                    <option value="3">Platinum Tier</option>
+                </select>
+            </div>
+
+            <input type="submit" value="Register" class="button">
+        </form>
+    </main>
+
+    <footer>
+        <a href="#">Privacy Policy</a>
+        <!-- You can style and structure the footer as needed -->
+    </footer>
+</body>
+
+</html>

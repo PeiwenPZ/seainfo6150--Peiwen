@@ -1,0 +1,71 @@
+body {
+    background-color: white;
+}
+
+#homepage {
+    background-color: pink;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* header area*/
+header {
+    flex-basis: 100%;
+    background-color: plum;
+}
+
+
+/* set margin top align with header */
+.menu {
+    margin: 0%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.menu li {
+    display: inline-flex;
+    padding: 10px;
+}
+
+
+.menu li:hover {
+    background-color: rebeccapurple;
+}
+
+/* nav bar left*/
+.local-menu {
+    margin: 0px;
+    border-right: 2px solid black;
+    width: 30%;
+    flex: 1;
+    /* no padding in the area leaving no blank between border line*/
+}
+
+.local-menu li {
+    /* no margin in the left and right */
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    padding: 10px;
+}
+
+
+.local-menu li:hover {
+    background-color: plum;
+}
+
+/* main area right */
+
+main {
+    display: block;
+    width: 70%;
+    padding: 10px;
+    /* shrink this area */
+    flex: 2;
+}
+
+footer {
+    flex-basis: 100%;
+    background-color: plum;
+    padding: 10px;
+}

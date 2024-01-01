@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous Shiba</title>
+    <script defer src="script.js"></script>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <div class="title-container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/images/logo.png" alt="Shiba Inu Logo">
+                </a>
+            </div>
+            <div class="web-title">
+                <h1>Shiba Inu World</h1>
+            </div>
+
+        </div>
+
+        <nav>
+            <div class="nav-bar">
+
+
+                <div class="hamburger-menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="shibas.html">Famous Shiba</a></li>
+                    <li><a href="fake-link.html">Shiba Events</a></li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="card-container">
+
+            <section class="card">
+                <h2>Shiba Name 1</h2>
+                <img src="assets/images/photo-1578133507770-a35cc3c786e6.avif" alt="Shiba Image 1">
+                <p>A brief introduction to this Shiba. <button class="subscribe-button">Subscribe</button> to learn
+                    more!</p>
+            </section>
+
+
+            <section class="card">
+                <h2>Shiba Name 2</h2>
+                <img src="assets/images/photo-1567225591450-06036b3392a6.avif" alt="Shiba Image 2">
+                <p>A brief introduction to this Shiba. <button class="subscribe-button">Subscribe</button> to learn
+                    more!</p>
+            </section>
+
+
+            <section class="card">
+                <h2>Shiba Name 3</h2>
+                <img src="assets/images/photo-1561449845-d47921e86f68.avif" alt="Shiba Image 3">
+                <p>A brief introduction to this Shiba. <button class="subscribe-button">Subscribe</button> to learn
+                    more!</p>
+            </section>
+
+            <section class="card">
+                <h2>Shiba Name 4</h2>
+                <img src="assets/images/logo.png" alt="Shiba Image 4">
+                <p>A brief introduction to this Shiba. <button class="subscribe-button">Subscribe</button> to learn
+                    more!</p>
+            </section>
+
+            <section class="card">
+                <h2>Shiba Name 5</h2>
+                <img src="assets/images/photo-1561449845-d47921e86f68.avif" alt="Shiba Image 5">
+                <p>A brief introduction to this Shiba. <button class="subscribe-button">Subscribe</button> to learn
+                    more!</p>
+            </section>
+
+            <section class="card">
+                <h2>Shiba Name 6</h2>
+                <img src="assets/images/photo-1561449845-d47921e86f68.avif" alt="Shiba Image 6">
+                <p>A brief introduction to this Shiba. <button class="subscribe-button">Subscribe</button> to learn
+                    more!</p>
+            </section>
+
+        </div>
+
+        <dialog class="modal">
+            <h2>Subscribe to Shiba</h2>
+            <form id="subscribe-form" action="/subscribe" method="post">
+                <div class="question-container">
+                    <label for="email">Email<span class="required-indicator">* required</span>:</label>
+                    <input type="text" id="email" name="email">
+                    <div class="error" id="email-error"></div>
+                </div>
+
+                <div class="question-container">
+                    <label for="confirm">Confirm Email<span class="required-indicator">* required</span>:</label>
+                    <input type="text" id="confirm" name="confirm">
+                    <div id="confirm-email-error" class="error"></div>
+                </div>
+
+                <button type="submit" class="subscribe-submit">Subscribe</button>
+                <button type="button" id="cancel" class="subscribe-cancel">Cancel</button>
+            </form>
+        </dialog>
+
+
+    </main>
+
+    <footer>
+        <ul class="footer-links">
+            <li><a href="privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="work-for-us.html">Work for Us</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+            <li><a href="social-media.html">Social Media</a></li>
+        </ul>
+
+    </footer>
+
+</body>
+
+</html>

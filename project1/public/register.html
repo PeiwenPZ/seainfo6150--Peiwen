@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote for Your Favorite Shiba Inu</title>
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <header>
+        <nav class="horizontal-menu">
+            <a href="index.html" class="logo-link">
+                <img src="assets/images/logo.png" alt="Shiba Inu Logo">
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="dropdown">
+                    <a href="about.html">About</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="team.html">Our Team</a></li>
+                        <li><a href="mission.html">Mission</a></li>
+                    </ul>
+                </li>
+                <li><a href="register.html">Vote</a></li>
+            </ul>
+        </nav>
+
+    </header>
+    <main>
+        <h1>Vote for Your Favorite Shiba Inu</h1>
+        <p>Cast your vote for the Shiba Inu you love the most! Your vote will help us determine which Shiba Inu is the
+            favorite among our community members. Please fill out the form below to submit your vote:</p>
+        <form action="/register" method="post" class="register">
+            <div class="question">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+
+            <div class="question">
+                <label for="email">Email: <span class="required">email required!</span></label>
+                <input type="email" id="email" name="email" required>
+
+            </div>
+
+            <div class="question">
+                <label for="color-checkbox">Select the color of Shiba Inu using a checkbox:</label>
+                <input type="checkbox" id="color-checkbox" name="color" value="Black"> Black
+                <input type="checkbox" id="color-checkbox" name="color" value="Yellow"> Yellow
+                <input type="checkbox" id="color-checkbox" name="color" value="White"> White
+            </div>
+
+            <div class="question">
+                <label for="shiba-dropdown">Select your favorite Shiba Inu:</label>
+                <select id="shiba-dropdown" name="Shiba" required>
+                    <option value="">Select your favorite Shiba Inu</option>
+                    <option value="Shiba 1">Shiba 1</option>
+                    <option value="Shiba 2">Shiba 2</option>
+                    <option value="Shiba 3">Shiba 3</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button type="submit">Submit Vote</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <a href="privacy.html">Privacy Policy</a>
+        <p>&copy; 2023 Shiba Inu Paradise</p>
+    </footer>
+</body>
+
+</html>

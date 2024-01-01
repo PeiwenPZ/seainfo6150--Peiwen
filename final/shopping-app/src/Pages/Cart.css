@@ -1,0 +1,74 @@
+/* Cart.css */
+
+
+.cart-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+
+}
+
+.cart-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+.cart-items {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.cart-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.item-info {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.item-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+
+.item-price {
+    color: black;
+}
+
+
+
+/* 总计区域 */
+.total-section {
+    margin-top: 20px;
+}
+
+/* 总计标题 */
+.total-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* 总计金额 */
+.total-amount {
+    font-size: 20px;
+    color: #333;
+}
+
+.cart-container p {
+    color: #333;
+}
